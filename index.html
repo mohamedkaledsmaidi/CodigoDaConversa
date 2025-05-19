@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionando...</title>
+  
+  <!-- Pixel do Facebook -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1032225729043782');
+    fbq('track', 'Purchase', {
+      value: 10.00,
+      currency: 'BRL'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=1032225729043782&ev=Purchase&cd[value]=10.00&cd[currency]=BRL&noscript=1"/>
+  </noscript>
+
+  <!-- Redirecionamento -->
+  <script>
+    setTimeout(function() {
+      window.location.href = "x"; // Substitua 'https://drive.google.com/file/d/1xWDWBcvqh6qtrtLmVAoX_pxC1qy0oNPC/view?usp=drive_link' pela URL desejada
+    }, 1500); // Aguarda 1.5 segundos antes de redirecionar para garantir que o pixel carregue
+  </script>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    .container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Liberando o seu acesso ao Código Da Conversa...</p>
+  </div>
+</body>
+</html>
